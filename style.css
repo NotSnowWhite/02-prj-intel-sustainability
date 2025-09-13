@@ -53,7 +53,7 @@ section {
 section > div {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 32px rgba(0,60,113,0.18), 0 2px 8px rgba(0,0,0,0.12);
   min-width: 260px;
   max-width: 300px;
   flex: 0 0 auto;
@@ -69,15 +69,14 @@ section > div p {
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 60, 113, 0.95); /* Opaque Intel blue */
+  background-color: rgba(0, 60, 113); /* Opaque Intel blue */
   color: #fff;
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   z-index: 10;
-  width: 90%;
+  width: 95%;
   height: 80%;
-  max-width: 260px;
   font-size: 1rem;
   text-align: center;
   pointer-events: none;
@@ -86,6 +85,8 @@ section > div p {
 section > div:hover p {
   display: block;
   pointer-events: auto;
+  /* Add inner light shadow */
+  box-shadow: 0 4px 16px rgba(0,60,113,0.15), inset 0 0 8px 2px #4a94de;
 }
 
 /* Blue background for the bottom area of the page */
@@ -103,7 +104,7 @@ footer, .page-bottom {
     overflow-y: auto;
     max-height: 80vh;
   }
-  section > div {
+  section > div{
     min-width: unset;
     max-width: 100%;
   }
