@@ -71,7 +71,7 @@ section {
 }
 
 /* Style each card in the timeline */
-section > div {
+section.timeline-cards > div {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 8px 32px rgba(0,60,113,0.18), 0 2px 8px rgba(0,0,0,0.12);
@@ -86,7 +86,7 @@ section > div {
 }
 
 /* Hide the p text in section divs until hover, then show in a floating box */
-section > div p {
+section.timeline-cards > div p {
   display: none;
   position: absolute;
   left: 50%;
@@ -105,7 +105,7 @@ section > div p {
   pointer-events: none;
 }
 
-section > div:hover p {
+section.timeline-cards > div:hover p {
   display: block;
   pointer-events: auto;
   /* Add inner light shadow */
