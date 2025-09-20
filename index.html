@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -33,7 +32,7 @@
 
   <div class="section-container">
     <!-- Timeline Cards Section -->
-    <section class="timeline-cards">
+    <section class="timeline-cards align-items-center">
 
       <!-- Card 1: 1968 -->
       <div>
@@ -146,56 +145,65 @@
     <p class="scroll-prompt">Scroll to view timeline | Hover over cards to learn more!</p>
 
     <!-- 3-Column Content Section -->
-    <section class="new-columns">
-      <div class="container text-center">
-        <div class="row">
-          <!-- Column 1 -->
-          <div class="">
-            <h2>RISE Strategy</h2>
-            <p>
+    <section class="new-columns container text-center">
+      <!-- Column 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h2 class="card-title">RISE Strategy</h2>
+            <p class="card-text">
               Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy,
               Intel sets ambitious 2030 goals, including driving industry-wide
               progress on climate action, water stewardship, and waste reduction.
             </p>
-            <!-- Learn More Button -->
-            <a href="#">Learn More</a>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
-
-          <!-- Column 2 -->
-          <div>
-            <h2>Commitment</h2>
-            <p>
+        </div>
+      </div>
+      <!-- Column 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h2 class="card-title">Commitment</h2>
+            <p class="card-text">
               In 2022, Intel pledged to achieve net-zero greenhouse gas emissions
               (Scope 1 and 2) by 2040. This commitment builds on decades of
               environmental initiatives and partnerships across the semiconductor
               industry.
             </p>
-            <!-- Learn More Button -->
-            <a href="#">Learn More</a>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
-
-          <!-- Column 3 -->
-          <div>
-            <h2>Water &amp; Waste</h2>
-            <p>
+        </div>
+      </div>
+      <!-- Column 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h2 class="card-title">Water &amp; Waste</h2>
+            <p class="card-text">
               Intel conserves billions of gallons of water annually and
               collaborates with local communities to restore watersheds.
               Intel also upcycles and recycles materials to reduce waste and
               advance a circular economy.
             </p>
-            <!-- Learn More Button -->
-            <a href="#">Learn More</a>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Subscription Form -->
-    <section class="subscription-form">
-      <h2>Subscribe to our Newsletter</h2>
-      <!-- Add form here -->
-    </section>
   </div>
+
+  <!-- Subscription Form -->
+  <h2 class="d-flex justify-content-center">Subscribe to our Newsletter</h2>
+  <form class="row g-3 justify-content-center">
+    <div class="col-auto">
+      <input type="email" class="form-control text-center" placeholder="Enter your email" required>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+  </form>
+  </section>
+  </div>
+
 
   <footer>
     <div class="page-bottom">
