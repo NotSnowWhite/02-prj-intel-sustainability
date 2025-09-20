@@ -1,3 +1,7 @@
+/* Center the columns section horizontally */
+.new-columns {
+  justify-content: center;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -87,7 +91,7 @@ section {
 }
 
 .section-container {
-  padding: 0;
+  padding: 0 15px;
   text-align: center;
 }
 
@@ -135,7 +139,7 @@ section.timeline-cards > div:hover p {
 
 section.new-columns {
   flex-direction: row; 
-  flex-wrap: nowrap; 
+  flex-wrap: wrap; 
   overflow-x: auto; 
   gap: 20px; /* Space between cards */
   padding: 20px 0;
